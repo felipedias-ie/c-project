@@ -116,3 +116,9 @@ sphinx-build -b html . _build/html
 ```
 
 Then open `docs/_build/html/index.html` in your browser.
+
+## AI Disclosure
+
+all parts of the code written with the help of a language model are labeled with [AI]
+
+https://github.com/search?q=repo%3Afelipedias-ie%2Fc-project%20AI&type=code
