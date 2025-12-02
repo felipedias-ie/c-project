@@ -1,0 +1,22 @@
+PROJECT_NAME           = "slither.c"
+PROJECT_BRIEF          = "A multiplayer snake game built with C, raylib, and ENet"
+OUTPUT_DIRECTORY       = _build/doxygen
+INPUT                  = ../src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h
+
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+GENERATE_XML           = YES
+
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = YES
+
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+
+WARN_IF_UNDOCUMENTED   = NO
+QUIET                  = YES

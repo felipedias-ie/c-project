@@ -1,0 +1,16 @@
+name: slither_c
+channels:
+  - conda-forge
+channel_priority: strict
+dependencies:
+  - make
+  - pkg-config
+  - c-compiler
+  - cmake
+  - doxygen
+  - python>=3.10
+  - pip
+  - pip:
+    - sphinx
+    - breathe
+    - furo

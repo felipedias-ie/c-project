@@ -1,0 +1,48 @@
+# slither.c Game Configuration
+# Reload server to apply changes
+
+[server]
+tick_rate = 60
+port = 7777
+
+[gameplay]
+immunity_seconds = 3.0
+start_score = 10
+kill_bonus = 50
+
+[movement]
+base_speed = 3.2
+boost_speed = 5.5
+boost_cost_per_tick = 2
+min_score_to_boost = 15
+
+[snake_size]
+radius_base = 10.0
+radius_growth = 0.008       # was 0.015 - reduced for slower width growth
+radius_max = 80.0
+
+[snake_length]
+trail_base = 20
+trail_growth_divisor = 3    # was 2 - snake grows longer slower (score / divisor)
+
+[food_drop]
+skip_segments = 5           # was 3 - drops less food (higher = less food)
+value_base = 3              # was 5 - smaller food pieces
+value_score_divisor = 100   # was 50 - less value scaling
+value_max = 30              # was 50 - cap on food value
+
+[food_spawn]
+value_min = 1
+value_max = 3
+
+[bots]
+count = 20
+turn_speed = 0.08
+wiggle_amount = 0.05
+
+[spawn]
+safe_distance = 500
+max_attempts = 50
+
+[collision]
+body_check_step = 2         # check every Nth trail segment for performance

@@ -1,0 +1,30 @@
+# Build
+build/
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables (in build dir)
+/build/client
+/build/server
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docs
+docs/_build/
+
+# OS
+.DS_Store
+Thumbs.db
